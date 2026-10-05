@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>content-studio — agent schema</title>
+<link rel="stylesheet" href="overview.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="ident">
+      <div class="sigil">🤖</div>
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <h1>content-studio</h1>
+          <span class="statepill planned"><span class="led planned"></span>PLANNED · NOT LAUNCHED</span>
+        </div>
+        <div class="byline">Claude Managed Agent · Lukas · Hydré + all projects · created 2026-10-04</div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-k">Model</div><div class="stat-v"><span class="dim">picked at launch</span></div></div>
+      <div class="stat"><div class="stat-k">Radar</div><div class="stat-v">Mon 7:00 <span class="dim">Brisbane</span></div></div>
+      <div class="stat"><div class="stat-k">Agent</div><div class="stat-v"><span class="dim">at launch</span></div></div>
+      <div class="stat"><div class="stat-k">Deployment</div><div class="stat-v"><span class="dim">after first pass</span></div></div>
+    </div>
+  </div>
+
+  <p class="problem">"It's going to look into the niche and ask questions for what type of content it's going to create and for what project. It's then going to watch the leading competitors and current upcoming trends to keep in front of the cycle. It does product images and videos itself but it runs a check past me before it does."</p>
+
+  <p class="lane-label">System schema</p>
+  <div class="pipeline">
+
+    <div class="col">
+      <p class="col-title">Trigger</p>
+      <div class="node key grow">
+        <div class="node-head"><span class="node-icon">🗓️</span><h2>Deployment — Weekly Radar</h2><span class="node-meta">cron · <b>0 7 * * 1</b></span></div>
+        <div class="node-body">
+          <div class="field"><div class="field-k">schedule · expression / timezone</div><strong>Every Monday · 7:00 AM</strong> <span class="sub small">Australia/Brisbane</span></div>
+          <div class="field"><div class="field-k">Status</div><span class="tag">created after the first run passes</span></div>
+          <div class="field"><div class="field-k">initial_events</div><p class="small sub">Radar kickoff: scan niche, competitors and trends for every active project, write the week's plan and briefs, propose generations — stop before spending credits.</p></div>
+        </div>
+        <div class="node-foot">▶️ Production sessions run on demand: you approve each 🔌 Higgsfield job as it comes up.</div>
+      </div>
+    </div>
+
+    <div class="joint" aria-hidden="true"></div>
+
+    <div class="col">
+      <p class="col-title">Worker</p>
+      <div class="env-frame">
+        <span class="env-tab">📦 environment · type: cloud · networking: unrestricted · packages: none</span>
+
+        <div class="node key">
+          <div class="node-head"><span class="node-icon">🤖</span><h2>Agent — content-studio</h2><span class="node-meta"><b>model at launch</b> · v1</span></div>
+          <div class="node-body">
+            <div class="field"><div class="field-k">system · the job</div>
+              <p class="small">Three modes: <b>Intake</b> (in-depth questionnaire per project) · <b>Radar</b> (niche, competitors, trends → plan + briefs) · <b>Production</b> (images and video in Higgsfield, each job approved first). Outputs to <code>/mnt/session/outputs/</code>.</p></div>
+          </div>
+        </div>
+
+        <div class="attach-grid">
+          <div class="attach">
+            <h3>🛠️ Tools</h3>
+            <p><code>tools[] · agent_toolset_20260401</code><br><span class="tag on">web_search</span><span class="tag on">web_fetch</span><span class="tag">bash</span><span class="tag">read</span><span class="tag">write</span><span class="tag">edit</span><span class="tag">glob</span><span class="tag">grep</span></p>
+          </div>
+          <div class="attach">
+            <h3>🔌 Connector &amp; 🔐 vault</h3>
+            <p><code>mcp_servers[] · higgsfield</code> <span class="tag">always_ask</span><br><code>vault_ids[]</code> — Higgsfield <span class="mono">mcp_oauth</span> token (auto-refresh)</p>
+          </div>
+          <div class="attach">
+            <h3>🧠 Memory store</h3>
+            <p><code>resources[] · memory_store</code> <span class="tag good">read_write</span> <strong>content-brain</strong> — projects, avatars, formats, results, learnings, watchlists.</p>
+          </div>
+          <div class="attach">
+            <h3>📄 Skills</h3>
+            <p><code>skills[] · custom</code> <strong>content-studio</strong> + Instagram pack (hook-extractor, carousel-planner, caption-writer, hashtag-strategist, content-planner, repurposer, humanizer, audience-insights).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="joint" aria-hidden="true"></div>
+
+    <div class="col">
+      <p class="col-title">Output &amp; grading</p>
+
+      <div class="node">
+        <div class="node-head"><span class="node-icon">📤</span><h2>Deliverable</h2><span class="node-meta">files api</span></div>
+        <div class="node-body">
+          <p class="small"><code>radar.md</code> · <code>plan.md</code> · <code>briefs/</code> · <code>approvals.md</code> (generation jobs waiting for your yes) — plus generated media IDs in production runs.</p>
+          <div class="field"><div class="field-k">Guardrails in effect</div>
+            <span class="tag">max_iterations: 3</span><span class="tag">Higgsfield always_ask</span><span class="tag">never posts</span></div>
+        </div>
+      </div>
+
+      <div class="node key grow">
+        <div class="node-head"><span class="node-icon">🎯</span><h2>Outcome — Weekly Radar</h2><span class="node-meta"><b>user.define_outcome</b> · max_iterations 3</span></div>
+        <div class="node-body">
+          <p class="small sub" style="margin-bottom:8px;">Your definition of done — <code>rubric.content</code>, graded every run.</p>
+          <ol class="rubric small">
+            <li>3+ named competitors, each with a source link and what's working for them now</li>
+            <li>3+ trends, each rated emerging / peaking / saturated with a ride-or-skip call</li>
+            <li>A 7-day plan: date · channel · format · hook · pillar</li>
+            <li>Briefs obey the project's memory rules (voice, colours, claims)</li>
+            <li>Generations only proposed in approvals.md — none spent</li>
+            <li>Memory updated with new competitors, trends and learnings</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lane-grid">
+    <div class="lane">
+      <div class="lane-head"><span class="node-icon">📜</span><h2>Sessions · run log</h2><span class="lane-meta">no runs yet</span></div>
+      <div class="lane-body">
+        <div class="overflow">
+        <table>
+          <thead><tr><th>Run</th><th>Session</th><th>Rubric</th><th>Verdict</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>—</td><td class="mono">—</td><td>—</td><td><span class="tag">no runs yet</span></td><td class="sub">Waiting on API key + Higgsfield sign-in.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+    <div class="lane">
+      <div class="lane-head"><span class="node-icon">🧪</span><h2>Evals</h2><span class="lane-meta">3 cases</span></div>
+      <div class="lane-body">
+        <div class="overflow">
+        <table>
+          <thead><tr><th>Case</th><th>Known-good answer</th><th>Last verdict</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">01-hydre-radar</td><td>Rubric (first verified output saved)</td><td><span class="tag">not run yet</span></td></tr>
+            <tr><td class="mono">02-hydre-production</td><td>Approved video 77a2ede1 + staged recipe</td><td><span class="tag">not run yet</span></td></tr>
+            <tr><td class="mono">03-new-project-intake</td><td>Full questionnaire before any plan</td><td><span class="tag">not run yet</span></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="small sub" style="margin:.5em 0 0;">Case 1 is the v0 input; 2 and 3 are held back and re-run before promoting any new agent version.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lane full">
+    <div class="lane-head"><span class="node-icon">🧭</span><h2>Next directions</h2><span class="lane-meta">the version rail</span></div>
+    <div class="lane-body">
+      <div class="rail">
+        <div class="ver">
+          <div class="ver-tag">v1</div>
+          <div class="ver-what">ElevenLabs voiceovers · competitor ad-spend data · TikTok/YouTube/Marketing packs · phone approval inbox</div>
+          <div class="ver-why">Needs credentials / deliberate scope</div>
+          <div class="ver-how">Vault <span class="mono">environment_variable</span> creds · <span class="mono">skills[]</span> additions · generated interface</div>
+        </div>
+        <div class="ver">
+          <div class="ver-tag">v2</div>
+          <div class="ver-what">Loosen the gate for trusted formats · gated publishing · memory consolidation</div>
+          <div class="ver-why">Only after trust is earned</div>
+          <div class="ver-how">Per-tool <span class="mono">always_allow</span> · social MCP + <span class="mono">always_ask</span> · Dreams</div>
+        </div>
+        <div class="ver">
+          <div class="ver-tag">always</div>
+          <div class="ver-what">Re-run evals before promoting a new version</div>
+          <div class="ver-why">Process habit</div>
+          <div class="ver-how"><span class="mono">evals/run-evals.sh</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>generated from build-sheet.json by claude code · live runs &amp; traces: <a href="https://platform.claude.com/workspaces/default/agents">open the console</a> (your key's workspace — swap "default" if yours differs)</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "type": "user.define_outcome",
+      "description": "Run this week's Radar for the Hydr\u00e9 project (memory slug: hydre).\n\nThis is an unattended run: do not call any Higgsfield generation tools and do not wait for answers. Where the Hydr\u00e9 profile has gaps (audience, pillars, channels, weekly volume, competitors), first research what you can (Hydr\u00e9's own site and socials, the filtered shower head category), make clearly-labelled assumptions for this week, and write the remaining questions to questions.md as the first intake round.\n\nThen: scan the leading competitors and emerging trends in the filtered-shower-head / shower-water niche for the last 14 days as of today, write radar.md, a 7-day plan.md starting this Monday, one brief per planned piece in briefs/, and approvals.md with the generation jobs you propose (use Hydr\u00e9's approved staged recipe for any UGC). Update memory as the content-studio skill describes.\n",
+      "rubric": {
+        "type": "text",
+        "content": "# Weekly Radar \u2014 definition of done\n\n1. `radar.md` names at least 3 real competitors for the project, each with at least one source link and what is working for them in the last 14 days as of this run (anything unverifiable is marked `unverified`).\n2. `radar.md` lists at least 3 trends (formats, sounds, topics or aesthetics), each rated emerging / peaking / saturated / dead with a ride, bend or skip verdict and a link.\n3. `plan.md` is a 7-day plan starting this Monday as of this run (date \u00b7 channel \u00b7 format \u00b7 pillar \u00b7 hook \u00b7 brief link) that matches the project's content mix and weekly volume in memory.\n4. Every brief in `briefs/` obeys the project's memory rules: voice, product colours/appearance, claims rules, wardrobe/setting rules, no logos where banned. No brief contains a fake testimonial or unsubstantiated claim.\n5. `approvals.md` lists every proposed generation (number \u00b7 model \u00b7 what it makes \u00b7 estimated credits \u00b7 why) and **no Higgsfield generation tool was called** in this run.\n6. Memory was updated: `projects/<slug>/watchlist.md` has this run's competitor snapshot and trend log, and any new rule landed in `learnings.md`.\n"
+      },
+      "max_iterations": 3
+    }
+  ]
+}

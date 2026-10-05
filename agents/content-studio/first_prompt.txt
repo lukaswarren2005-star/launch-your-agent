@@ -1,0 +1,5 @@
+Run this week's Radar for the Hydré project (memory slug: hydre).
+
+This is an unattended run: do not call any Higgsfield generation tools and do not wait for answers. Where the Hydré profile has gaps (audience, pillars, channels, weekly volume, competitors), first research what you can (Hydré's own site and socials, the filtered shower head category), make clearly-labelled assumptions for this week, and write the remaining questions to questions.md as the first intake round.
+
+Then: scan the leading competitors and emerging trends in the filtered-shower-head / shower-water niche for the last 14 days as of today, write radar.md, a 7-day plan.md starting this Monday, one brief per planned piece in briefs/, and approvals.md with the generation jobs you propose (use Hydré's approved staged recipe for any UGC). Update memory as the content-studio skill describes.
