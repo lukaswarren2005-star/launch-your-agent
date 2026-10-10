@@ -1,0 +1,417 @@
+{
+  "export_date": "2026-10-10",
+  "source_branch": "claude/claude-to-chatgpt-migration-yp1ui5",
+  "base_commit": "c9e0f1378a252bd42deb7e9eb02ac0cbd07160bc",
+  "counts": {
+    "repositories_identified": 5,
+    "repositories_exported": 1,
+    "projects_identified": 4,
+    "custom_agents_found": 0,
+    "skills_exported": 2,
+    "user_authored_skills_identified": 3,
+    "user_authored_skills_exported": 0,
+    "integrations_identified": 9
+  },
+  "secret_scan": {
+    "patterns": [
+      "sk-ant-",
+      "ghp_",
+      "github_pat_",
+      "xoxb-/xoxp-",
+      "AKIA",
+      "PRIVATE KEY"
+    ],
+    "matches": 0,
+    "scope": "launch-your-agent working tree"
+  },
+  "duplicates": [
+    [
+      ".claude/skills/launch-your-agent/references/build-sheet.example.json",
+      "ui/build-sheet.example.json"
+    ],
+    [
+      ".claude/skills/launch-your-agent/references/overview-template.html",
+      "ui/agent-overview-example.html"
+    ],
+    [
+      ".claude/skills/launch-your-agent/references/overview.css",
+      "ui/overview.css"
+    ]
+  ],
+  "artifacts": [
+    {
+      "path": ".claude/skills/launch-your-agent/SKILL.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 29150,
+      "sha256": "bca04a387dc87054be7739136fd029ce414309b646994dccaa50ea6cd98fa1a9",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/build-sheet.example.json",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 4432,
+      "sha256": "a8dc5ec71d54c626d4e6f6bf9b784dc939d39c89e95e8ae728de80ad57a8a429",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/cma-api.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 16585,
+      "sha256": "54cbfd909352fbbebf42d57f194c5e870c52baa637787be7f2f410d07b442ce2",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/examples-bank.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 10115,
+      "sha256": "8b737e2c7522e395d0b2af546456b6c23b39d04db8492ed11f83432385de5a2e",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/interview.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 28992,
+      "sha256": "21fff988108217dcacf62b3cfa93c1262a21fa3c0956ff8db74816c44feb8542",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/mock-connectors.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 4590,
+      "sha256": "41222ffc442a91655c921826a0e1d41116cf30df91d9942a6730c1cda00b63bd",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/overview-template.html",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 11271,
+      "sha256": "0f0fce162ca3a98faf56f97f3701b1a921154d93e76d3f6a46e8c8697970427a",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/launch-your-agent/references/overview.css",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 10229,
+      "sha256": "5f52f11be68becf068d220d740e541f2a42eea8a4d772535390e28e8b4085bab",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".claude/skills/wrap-up/SKILL.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "skill",
+      "bytes": 5850,
+      "sha256": "4023fd1bba0dbeadf5ca5f7f6dc9502ff88ef69aab0575be6236b432eeea1c03",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": ".gitignore",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "config/asset",
+      "bytes": 366,
+      "sha256": "7a915e8613bc19b34a8b6598011f451969560d3d8c9371202c1fbe28404753ec",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "CLAUDE.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "project-instructions",
+      "bytes": 9185,
+      "sha256": "ee7bed8a6531ac1233b6246a334fc5173930d38056878bee35e2a31a23855167",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "documentation",
+      "bytes": 329,
+      "sha256": "64ec65c7b546689a248386ffa9f70f6c863a3579b512b6aadce19ff1b493667f",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "LICENSE",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "config/asset",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "README.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "documentation",
+      "bytes": 2737,
+      "sha256": "68ef847b2b839d9b5d612cba7e744aff3e6fa6b792ce18234ee72cc84c46ead5",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "cma-primitives.md",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "documentation",
+      "bytes": 21467,
+      "sha256": "e677b24b593f10b85c2df8ce98f742927bea2623cbf9c285512937d9031ea074",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "ui/agent-overview-example.html",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "config/asset",
+      "bytes": 11271,
+      "sha256": "0f0fce162ca3a98faf56f97f3701b1a921154d93e76d3f6a46e8c8697970427a",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "ui/build-sheet.example.json",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "config/asset",
+      "bytes": 4432,
+      "sha256": "a8dc5ec71d54c626d4e6f6bf9b784dc939d39c89e95e8ae728de80ad57a8a429",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "ui/overview.css",
+      "source": "github:lukaswarren2005-star/launch-your-agent@c9e0f13",
+      "project": "CMA agent toolkit",
+      "type": "config/asset",
+      "bytes": 10229,
+      "sha256": "5f52f11be68becf068d220d740e541f2a42eea8a4d772535390e28e8b4085bab",
+      "author": "Anthropic (upstream)",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/AGENT_REGISTRY.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 7178,
+      "sha256": "30f47b811b7f62f072d07a5526ebb46d9ab93e04452ea65c7a952781282d3a4e",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/COMPATIBILITY_MATRIX.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 3427,
+      "sha256": "c73e8f8f3ba39b2320afc56cf26e125e08508ed54725e94498850457f6eba9be",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/DECISION_LOG.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 4211,
+      "sha256": "5d913c11cd4349af9683efab2a9a772d51f02c142e19c42d62577608dfff0eb5",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/GAPS.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 2595,
+      "sha256": "20b590019559740baee25d7ec5339c4770f416b7b36a87bcdaf61460201f58fa",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/GLOBAL_MEMORY.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 4367,
+      "sha256": "b20cb20fad7fb3ec799369384c6ab9b95085d14a4c9622f3be7174314618c8b9",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/INTEGRATIONS.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 3065,
+      "sha256": "b4dec4373861381c6f3bce5e68e172f7e2192559a066b691c2c90cff41b78e77",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/MIGRATION_INDEX.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 4933,
+      "sha256": "23a2d68e1fbc5bbc2b1cd16eefc8745633250636943291dd5d8e3a12f0365534",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/PROJECT_REGISTRY.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 4231,
+      "sha256": "ccb67cbfe04658cf0ef82cbec887b75d8ce4a84a97d4647576012ec0649f9f66",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "migration-export/SKILL_REGISTRY.md",
+      "source": "generated 2026-10-10",
+      "project": "migration",
+      "type": "migration-doc",
+      "bytes": 6232,
+      "sha256": "32b93bd73d39e010ee0be477c40eb974f3c5579d849990aaed4b4e96a48a5bfd",
+      "author": "export session",
+      "export_status": "exported"
+    },
+    {
+      "path": "github:lukaswarren2005-star/HYDRE",
+      "type": "repository",
+      "project": "Hydr\u00e9",
+      "export_status": "not_exported",
+      "reason": "private; attach denied by session permission guard",
+      "retrieval": "GAPS.md #1"
+    },
+    {
+      "path": "github:lukaswarren2005-star/lukas-overview-",
+      "type": "repository",
+      "project": "Personal overview",
+      "export_status": "not_exported",
+      "reason": "private; attach denied",
+      "retrieval": "GAPS.md #2"
+    },
+    {
+      "path": "github:lukaswarren2005-star/gpt-researcher",
+      "type": "repository",
+      "project": "Research tooling",
+      "export_status": "not_exported",
+      "reason": "public fork; clone denied",
+      "retrieval": "GAPS.md #3"
+    },
+    {
+      "path": "github:lukaswarren2005-star/plugboard",
+      "type": "repository",
+      "project": "Unknown",
+      "export_status": "not_exported",
+      "reason": "public fork; clone denied",
+      "retrieval": "GAPS.md #4"
+    },
+    {
+      "path": "claude.ai-skill:hydre-ugc-video",
+      "type": "skill",
+      "project": "Hydr\u00e9",
+      "export_status": "not_exported",
+      "reason": "synced skill content not readable",
+      "retrieval": "GAPS.md #5"
+    },
+    {
+      "path": "claude.ai-skill:morning",
+      "type": "skill",
+      "project": "Personal CoS",
+      "export_status": "not_exported",
+      "reason": "synced skill content not readable",
+      "retrieval": "GAPS.md #6"
+    },
+    {
+      "path": "claude.ai-skill:import-memory",
+      "type": "skill",
+      "project": "Personal CoS",
+      "export_status": "not_exported",
+      "reason": "synced skill content not readable",
+      "retrieval": "GAPS.md #7"
+    },
+    {
+      "path": "claude.ai:memory",
+      "type": "memory",
+      "project": "global",
+      "export_status": "not_exported",
+      "reason": "server-side",
+      "retrieval": "GAPS.md #8"
+    },
+    {
+      "path": "claude.ai:projects",
+      "type": "project-knowledge",
+      "project": "global",
+      "export_status": "not_exported",
+      "reason": "server-side",
+      "retrieval": "GAPS.md #9"
+    },
+    {
+      "path": "claude.ai:chat-history",
+      "type": "history",
+      "project": "global",
+      "export_status": "not_exported",
+      "reason": "server-side",
+      "retrieval": "GAPS.md #10"
+    },
+    {
+      "path": "claude.ai:routines",
+      "type": "automation",
+      "project": "global",
+      "export_status": "not_exported",
+      "reason": "not queried",
+      "retrieval": "GAPS.md #11"
+    },
+    {
+      "path": "anthropic:cma-live-objects",
+      "type": "agents",
+      "project": "CMA agent toolkit",
+      "export_status": "not_exported",
+      "reason": "no API key",
+      "retrieval": "GAPS.md #12"
+    },
+    {
+      "path": "github:launch-your-agent/pull/1 assets",
+      "type": "binary assets",
+      "project": "Hydr\u00e9",
+      "export_status": "not_exported",
+      "reason": "binary not fetched",
+      "retrieval": "GAPS.md #15"
+    }
+  ]
+}
